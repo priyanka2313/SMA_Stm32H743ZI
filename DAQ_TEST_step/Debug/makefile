@@ -76,8 +76,8 @@ all: main-build
 main-build: DAQ_TEST_step.elf secondary-outputs
 
 # Tool invocations
-DAQ_TEST_step.elf: $(OBJS) $(USER_OBJS) C:\Users\pmbit\Documents\imsl\project\DAQ_TEST_step\STM32H743ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "DAQ_TEST_step.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\pmbit\Documents\imsl\project\DAQ_TEST_step\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DAQ_TEST_step.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+DAQ_TEST_step.elf: $(OBJS) $(USER_OBJS) C:\Users\pmbit\Documents\imsl\project1\DAQ_TEST_step\STM32H743ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "DAQ_TEST_step.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\pmbit\Documents\imsl\project1\DAQ_TEST_step\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DAQ_TEST_step.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
