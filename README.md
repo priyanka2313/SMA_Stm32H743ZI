@@ -1,6 +1,6 @@
 # SMA_Stm32H743ZI
 
-This repository cotains programs for implementing basic functions of signal generation, signal read, saving sensor data and plotting on an STM32H743ZI board.
+This repository contains programs for implementing basic functions of signal generation, signal read, saving sensor data and plotting on an STM32H743ZI board.
 
 ## Getting Started
 
