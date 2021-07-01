@@ -32,7 +32,7 @@ Timer (Timer 6)
 [Random_signal_test]()
 - This program allows to generate random signals
 
-## ADC Read
+## [ADC Read] (https://drive.google.com/drive/folders/1jR2dddmhVlRCe3YemqBflgYDhnIt6Tlr?usp=sharing)
 ### ADC Settings
 ADC
 - ADC1- INP15
