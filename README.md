@@ -31,3 +31,24 @@ Timer (Timer 6)
 
 [Random_signal_test]()
 - This program allows to generate random signals
+
+## ADC Read
+### ADC Settings
+ADC
+- ADC1- INP15
+- Conversion data management - DMA Circular
+- External trigger conversion source - Timer 3 trigger out event
+- DMA settings mentioned in the main file
+
+Timer (Timer 3, 100Mhz)
+- Clock source - Internal clock
+- Channel 1 - Output compare no output
+- Prescalar - 10-1 (10Mhz)
+- Counter Period - 10-1 (1Mhz)
+- Trigger Event Selection - Update Event
+
+Connectivity - Usart3 
+
+### Serial output in STM32Cubeide
+- Open console -> Command shell console 
+- Select ISO-8859-1 and give a connection name.
